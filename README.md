@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Would You Rather Project
 
-## Available Scripts
+*Udacity’s React Nanodegree project* <br/>
 
-In the project directory, you can run:
+This app allows users to answer questions, see which questions they haven't answered, see how other people have voted, post questions, and see the ranking of users on the leaderboard.
 
-### `npm start`
+You can see the live demo **[here](https://attilakasza.com/react-wouldyourather/)**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## TL;DR
 
-### `npm test`
+To get started developing right away:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* install all project dependencies with `npm install`
+* start the development server with `npm start`
 
-### `npm run build`
+## Data
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The `_DATA.js` file represents a fake database and methods that let you access the data. 
+There are two types of objects stored in our database:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* Users
+* Questions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Users
 
-### `npm run eject`
+Users include:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Attribute    | Type             | Description           |
+|-----------------|------------------|-------------------         |
+| id                 | String           | The user’s unique identifier |
+| name          | String           | The user’s first name  and last name     |
+| avatarURL  | String           | The path to the image file |
+| questions | Array | A list of ids of the polling questions this user created|
+| answers      | Object         |  The object's keys are the ids of each question this user answered. The value of each key is the answer the user selected. It can be either `'optionOne'` or `'optionTwo'` since each question has two options.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Questions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Questions include:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Attribute | Type | Description |
+|-----------------|------------------|-------------------|
+| id                  | String | The question’s unique identifier |
+| author        | String | The author’s unique identifier |
+| timestamp | String | The time when the question was created|
+| optionOne | Object | The first voting option|
+| optionTwo | Object | The second voting option|
 
-## Learn More
+### Voting Options
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Voting options are attached to questions. They include:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+| Attribute | Type | Description |
+|-----------------|------------------|-------------------|
+| votes             | Array | A list that contains the id of each user who voted for that option|
+| text                | String | The text of the option |
