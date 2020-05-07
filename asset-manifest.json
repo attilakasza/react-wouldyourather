@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-wouldyourather/static/css/main.3a880779.chunk.css",
+    "main.js": "/react-wouldyourather/static/js/main.5f8f88d3.chunk.js",
+    "main.js.map": "/react-wouldyourather/static/js/main.5f8f88d3.chunk.js.map",
+    "runtime-main.js": "/react-wouldyourather/static/js/runtime-main.5028d86d.js",
+    "runtime-main.js.map": "/react-wouldyourather/static/js/runtime-main.5028d86d.js.map",
+    "static/js/2.778670d1.chunk.js": "/react-wouldyourather/static/js/2.778670d1.chunk.js",
+    "static/js/2.778670d1.chunk.js.map": "/react-wouldyourather/static/js/2.778670d1.chunk.js.map",
+    "index.html": "/react-wouldyourather/index.html",
+    "precache-manifest.6513ccc6cc339706d39346ade4167fc2.js": "/react-wouldyourather/precache-manifest.6513ccc6cc339706d39346ade4167fc2.js",
+    "service-worker.js": "/react-wouldyourather/service-worker.js",
+    "static/css/main.3a880779.chunk.css.map": "/react-wouldyourather/static/css/main.3a880779.chunk.css.map",
+    "static/js/2.778670d1.chunk.js.LICENSE.txt": "/react-wouldyourather/static/js/2.778670d1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5028d86d.js",
+    "static/js/2.778670d1.chunk.js",
+    "static/css/main.3a880779.chunk.css",
+    "static/js/main.5f8f88d3.chunk.js"
+  ]
+}
