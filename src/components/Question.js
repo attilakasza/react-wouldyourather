@@ -32,7 +32,7 @@ class Question extends Component {
       <div className='question'>
         <div className='question-head'>
           <img
-            src={`/${users[question.author].avatarURL}`}
+            src={`${users[question.author].avatarURL}`}
             alt={`Avatar of ${question.author}`}
             className='question-avatar'
           />
