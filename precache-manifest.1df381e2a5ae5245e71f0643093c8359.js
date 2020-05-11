@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "af5ceff095c3099968d831200717d651",
+    "revision": "852b56f1f7c021f7440db74169a1a9c6",
     "url": "/react-wouldyourather/index.html"
   },
   {
-    "revision": "bc870c31e8413fbbfef8",
+    "revision": "94d3ab6325171db059e5",
     "url": "/react-wouldyourather/static/css/main.3a880779.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-wouldyourather/static/js/2.778670d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bc870c31e8413fbbfef8",
-    "url": "/react-wouldyourather/static/js/main.5f8f88d3.chunk.js"
+    "revision": "94d3ab6325171db059e5",
+    "url": "/react-wouldyourather/static/js/main.8c17d015.chunk.js"
   },
   {
     "revision": "24364ed7021825372e7d",
